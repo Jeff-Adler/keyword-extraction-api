@@ -2,6 +2,9 @@ import spacy
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
 
+from extract_keywords import extract_keywords
+from fuzzy import get_fuzzy_similarity
+
 import subprocess
 
 # if you want to download the large model 

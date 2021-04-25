@@ -1,3 +1,7 @@
+import spacy
+import subprocess
+from string import punctuation
+
 def extract_keywords(nlp, sequence, special_tags : list = None):
     """ Takes a Spacy core language model,
     string sequence of text and optional
